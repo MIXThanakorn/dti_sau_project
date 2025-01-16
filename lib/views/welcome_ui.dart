@@ -1,5 +1,7 @@
 // ignore_for_file: sort_child_properties_last
 
+import 'package:dti_sau_project/views/login_ui.dart';
+import 'package:dti_sau_project/views/signup_ui.dart';
 import 'package:flutter/material.dart';
 
 class WelcomeUi extends StatefulWidget {
@@ -51,7 +53,14 @@ class _WelcomeUiState extends State<WelcomeUi> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 OutlinedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => LoginUi(),
+                      ),
+                    );
+                  },
                   child: Text(
                     'LOGIN',
                     style: TextStyle(
@@ -61,15 +70,22 @@ class _WelcomeUiState extends State<WelcomeUi> {
                   style: OutlinedButton.styleFrom(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(5.0)),
-                    fixedSize: Size(MediaQuery.of(context).size.width * 0.32,
+                    fixedSize: Size(MediaQuery.of(context).size.width * 0.36,
                         MediaQuery.of(context).size.height * 0.05),
                   ),
                 ),
                 SizedBox(
-                  width: MediaQuery.of(context).size.height * 0.04,
+                  width: MediaQuery.of(context).size.height * 0.015,
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => SignupUi(),
+                      ),
+                    );
+                  },
                   child: Text(
                     'SIGNUP',
                     style: TextStyle(
@@ -79,7 +95,7 @@ class _WelcomeUiState extends State<WelcomeUi> {
                   style: OutlinedButton.styleFrom(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(5.0)),
-                    fixedSize: Size(MediaQuery.of(context).size.width * 0.32,
+                    fixedSize: Size(MediaQuery.of(context).size.width * 0.36,
                         MediaQuery.of(context).size.height * 0.05),
                     backgroundColor: Colors.black,
                   ),
