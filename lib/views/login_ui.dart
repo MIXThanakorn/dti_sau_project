@@ -20,7 +20,7 @@ class _LoginUiState extends State<LoginUi> {
         child: Center(
           child: Column(
             children: [
-              SizedBox(height: MediaQuery.of(context).size.height * 0.03),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.02),
               Align(
                 alignment: Alignment.centerLeft,
                 child: Icon(
@@ -85,7 +85,7 @@ class _LoginUiState extends State<LoginUi> {
               ElevatedButton(
                 onPressed: () {},
                 child: Text(
-                  'SIGNUP',
+                  'LOGIN',
                   style: TextStyle(
                     color: Colors.white,
                   ),
@@ -93,8 +93,8 @@ class _LoginUiState extends State<LoginUi> {
                 style: OutlinedButton.styleFrom(
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(5.0)),
-                  fixedSize: Size(MediaQuery.of(context).size.width * 0.9,
-                      MediaQuery.of(context).size.height * 0.05),
+                  fixedSize: Size(MediaQuery.of(context).size.width * 1.0,
+                      MediaQuery.of(context).size.height * 0.06),
                   backgroundColor: Colors.black,
                 ),
               ),
@@ -121,8 +121,8 @@ class _LoginUiState extends State<LoginUi> {
                 style: OutlinedButton.styleFrom(
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(5.0)),
-                  fixedSize: Size(MediaQuery.of(context).size.width * 0.9,
-                      MediaQuery.of(context).size.height * 0.05),
+                  fixedSize: Size(MediaQuery.of(context).size.width * 1.0,
+                      MediaQuery.of(context).size.height * 0.06),
                 ),
               ),
               SizedBox(height: MediaQuery.of(context).size.height * 0.015),
